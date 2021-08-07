@@ -26,7 +26,7 @@ enterprises = {
 enterprises.clear()
 count_enterprises = int(input('Введите количество предприятий: '))
 if count_enterprises <= 0:
-    raise ValueError('Ты дурачок?')
+    raise ValueError('Должно быть больше нуля!')
 for entprs in range(1, count_enterprises + 1):
     name_enterprise = input(f'Введите название предприятия {entprs}: ')
     profit_enterprise = list(map(float, (input(
